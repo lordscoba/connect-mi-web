@@ -1,5 +1,25 @@
+import { Advert, Footer, Nav } from "../../components/layout";
+import {
+  HRecommended,
+  HServices,
+  Hproducts,
+  Hslider,
+  NewArrival,
+} from "../../components/user/home";
+
 const Home = () => {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="">
+      <Advert />
+      <Nav />
+      <HServices />
+      <Hslider />
+      <Hproducts />
+      <HRecommended />
+      <NewArrival />
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;
