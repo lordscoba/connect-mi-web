@@ -5,6 +5,7 @@ import {
   Hproducts,
   Hslider,
   NewArrival,
+  Subscribe,
 } from "../../components/user/home";
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <HRecommended />
         <NewArrival />
       </div>
+      <Subscribe />
       <Footer />
     </div>
   );

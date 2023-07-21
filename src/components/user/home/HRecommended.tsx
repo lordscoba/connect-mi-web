@@ -1,33 +1,21 @@
 import { IconContext } from "react-icons";
-import { AiFillStar, AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { AiFillStar } from "react-icons/ai";
 import { Shoe } from "../../../images/products";
 
 const HRecommended = () => {
   return (
     <div className="space-y-4">
       <div className="">Recommended</div>
-
-      <div className="bg-white p-5">
-        <div className="flex space-x-3 w-full overflow-x-auto whitespace-nowrap">
-          <RecommendedCard />
-          <RecommendedCard />
-          <RecommendedCard />
-          <RecommendedCard />
-          <RecommendedCard />
-        </div>
-        <div className="flex w-full space-x-4 justify-end p-3">
-          <Link to={""}>
-            <IconContext.Provider value={{ size: "1.5rem" }}>
-              <AiOutlineLeft />
-            </IconContext.Provider>
-          </Link>
-          <Link to={""}>
-            <IconContext.Provider value={{ size: "1.5rem" }}>
-              <AiOutlineRight />
-            </IconContext.Provider>
-          </Link>
-        </div>
+      <div className="flex  space-x-3 w-full  overflow-x-auto whitespace-nowrap">
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
+        <RecommendedCard />
       </div>
     </div>
   );
@@ -35,9 +23,9 @@ const HRecommended = () => {
 
 const RecommendedCard = () => {
   return (
-    <div className="flex flex-col ">
+    <div className="w-1/2 max-w-[58rem]flex flex-col bg-white p-4 rounded-xl  space-y-2">
       <img src={Shoe} alt="" />
-      <div className="text-inherit">
+      <div className="text-sm md:text-md whitespace-break-spaces">
         Delicious cake for breakfast and dessert
       </div>
       <div className="flex items-center space-x-2">

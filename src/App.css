@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* ResponsiveFont.css */
+
+/* Define the base font size (you can adjust this value to your preference) */
+:root {
+  font-size: 16px;
+}
+
+/* Add media queries to adjust the font size at different screen sizes */
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 12px;
+  }
+}
+
+/* Apply responsive font size to the text element */
+.responsive-font-container {
+  padding: 20px;
+}
+
+.text {
+  font-size: 1rem; /* 1rem is equivalent to the base font size defined in :root */
+}

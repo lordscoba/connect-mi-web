@@ -9,7 +9,7 @@ const HServices = () => {
   return (
     <div className="space-y-4">
       <div className="">Services</div>
-      <div className="flex space-x-5">
+      <div className="flex space-x-5 text-sm h-auto">
         <Link className="bg-[#222F3E] p-2 rounded-md text-white" to={""}>
           All
         </Link>
