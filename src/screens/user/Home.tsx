@@ -9,14 +9,16 @@ import {
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="bg-[#F4F4F4]">
       <Advert />
-      <Nav />
-      <HServices />
-      <Hslider />
-      <Hproducts />
-      <HRecommended />
-      <NewArrival />
+      <div className="space-y-4 p-5">
+        <Nav />
+        <HServices />
+        <Hslider />
+        <Hproducts />
+        <HRecommended />
+        <NewArrival />
+      </div>
       <Footer />
     </div>
   );
