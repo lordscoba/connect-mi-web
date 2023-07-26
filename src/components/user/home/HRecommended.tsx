@@ -5,7 +5,7 @@ import { Shoe } from "../../../images/products";
 const HRecommended = () => {
   return (
     <div className="space-y-4">
-      <div className="">Recommended</div>
+      <div className="font-bold">Recommended</div>
       <div className="flex  space-x-3 w-full  overflow-x-auto whitespace-nowrap">
         <RecommendedCard />
         <RecommendedCard />
@@ -39,4 +39,9 @@ const RecommendedCard = () => {
   );
 };
 
-export default HRecommended;
+const RecommendedComponents = {
+  HRecommended,
+  RecommendedCard,
+};
+
+export default RecommendedComponents;

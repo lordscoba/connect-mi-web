@@ -5,12 +5,15 @@ import { Products } from "../../../data/productsData";
 import { Slippers } from "../../../images/products";
 
 const Hproducts = () => {
-  const limitedProductArray = Products.slice(0, 4);
+  const limitedProductArray = Products.slice(0, 6);
   return (
     <div className="space-y-4">
-      <div className="">Products</div>
-      <div className="flex space-x-5">
-        <Link className="bg-[#222F3E] p-2 rounded-md text-white" to={""}>
+      <div className="font-bold">Products</div>
+      <div className="flex space-x-2 md:space-x-5 text-sm overflow-x-auto whitespace-nowrap">
+        <Link
+          className="bg-[#222F3E] p-2 rounded-md text-white"
+          to={"/products"}
+        >
           All
         </Link>
         {limitedProductArray.map((value) => {
@@ -20,7 +23,7 @@ const Hproducts = () => {
             </Link>
           );
         })}
-        <Link className="bg-[#E0E0E0] p-2 rounded-md" to={""}>
+        <Link className="bg-[#E0E0E0] p-2 rounded-md" to={"/search"}>
           ...More Items
         </Link>
       </div>

@@ -1,23 +1,23 @@
 import { Advert, Footer, Nav } from "../../components/layout";
 import {
-  HRecommended,
-  HServices,
   Hproducts,
   Hslider,
   NewArrival,
+  RecommendedComponents,
+  Scomponents,
   Subscribe,
 } from "../../components/user/home";
 
 const Home = () => {
   return (
-    <div className="bg-[#F4F4F4]">
+    <div className="bg-[#F4F4F4] overflow-x-hidden">
       <Advert />
-      <div className="space-y-4 p-5">
+      <div className="space-y-4 p-3 md:p-7">
         <Nav />
-        <HServices />
+        <Scomponents.HServices />
         <Hslider />
         <Hproducts />
-        <HRecommended />
+        <RecommendedComponents.HRecommended />
         <NewArrival />
       </div>
       <Subscribe />

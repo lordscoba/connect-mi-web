@@ -5,7 +5,7 @@ import { Shoe } from "../../../images/products";
 const NewArrival = () => {
   return (
     <div className="space-y-4">
-      <div className="">New Arrival</div>
+      <div className="font-bold">New Arrival</div>
       <div className="flex space-x-3 w-full overflow-x-auto whitespace-nowrap">
         <NewArrivalCard />
         <NewArrivalCard />

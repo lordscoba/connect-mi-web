@@ -8,9 +8,12 @@ const HServices = () => {
   const limitedServiceArray = Services.slice(0, 4);
   return (
     <div className="space-y-4">
-      <div className="">Services</div>
-      <div className="flex space-x-5 text-sm h-auto">
-        <Link className="bg-[#222F3E] p-2 rounded-md text-white" to={""}>
+      <div className="font-bold">Services</div>
+      <div className="flex space-x-2 md:space-x-5 text-sm h-auto overflow-x-auto whitespace-nowrap">
+        <Link
+          className="bg-[#222F3E] p-2 rounded-md text-white"
+          to={"/services"}
+        >
           All
         </Link>
         {limitedServiceArray.map((value) => {
@@ -20,7 +23,7 @@ const HServices = () => {
             </Link>
           );
         })}
-        <Link className="bg-[#E0E0E0] p-2 rounded-md" to={""}>
+        <Link className="bg-[#E0E0E0] p-2 rounded-md" to={"/search"}>
           ...More Items
         </Link>
       </div>
@@ -65,4 +68,10 @@ const ServiceCard = () => {
   );
 };
 
-export default HServices;
+const Scomponents = {
+  HServices,
+  ServiceCard,
+};
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default Scomponents;
