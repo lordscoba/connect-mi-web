@@ -18,7 +18,11 @@ const HServices = () => {
         </Link>
         {limitedServiceArray.map((value) => {
           return (
-            <Link className="bg-[#E0E0E0] p-2 rounded-md" to={""}>
+            <Link
+              key={value.service}
+              className="bg-[#E0E0E0] p-2 rounded-md"
+              to={""}
+            >
               {value.service}
             </Link>
           );

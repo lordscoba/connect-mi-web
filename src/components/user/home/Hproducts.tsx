@@ -16,9 +16,9 @@ const Hproducts = () => {
         >
           All
         </Link>
-        {limitedProductArray.map((value) => {
+        {limitedProductArray.map((value, i) => {
           return (
-            <Link className="bg-[#E0E0E0] p-2 rounded-md" to={""}>
+            <Link key={i} className="bg-[#E0E0E0] p-2 rounded-md" to={""}>
               {value.product}
             </Link>
           );

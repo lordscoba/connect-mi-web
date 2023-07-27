@@ -1,8 +1,7 @@
-import { Advert, Footer, Nav } from "../../components/layout";
+import { Advert, Carousel, Footer, Nav } from "../../components/layout";
 import { Scomponents, Subscribe } from "../../components/user/home";
 import {
   RecomendedServices,
-  Scarousel,
   TopServices,
 } from "../../components/user/services";
 
@@ -12,8 +11,8 @@ const Services = () => {
       <Advert />
       <div className="space-y-4 p-3 md:p-7">
         <Nav />
-        <Scarousel />
         <Scomponents.HServices />
+        <Carousel />
         <RecomendedServices />
         <TopServices />
       </div>
