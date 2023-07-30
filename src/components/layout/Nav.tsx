@@ -1,11 +1,13 @@
 import { useRef } from "react";
 import { IconContext } from "react-icons";
-import { BiSearch } from "react-icons/bi";
-import { BsCart } from "react-icons/bs";
+import { BiSearch, BiSupport } from "react-icons/bi";
+import { BsBoxSeam, BsCart } from "react-icons/bs";
+import { FaHome } from "react-icons/fa";
 import { GrFavorite } from "react-icons/gr";
 import { HiOutlineUser } from "react-icons/hi";
-import { PiSeal } from "react-icons/pi";
-import { TbTruckDelivery } from "react-icons/tb";
+import { MdFavoriteBorder } from "react-icons/md";
+import { PiHandCoins, PiSeal } from "react-icons/pi";
+import { TbClipboardList, TbTruckDelivery } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { Logo } from "../../images/logo";
 
@@ -111,33 +113,71 @@ const Nav = () => {
           </button>
         </div>
       </div>
-      <div ref={flexRef} className="hidden md:hidden bg-[#222F3E] text-white">
-        <div className="animate__animated animate__slideInRight absolute z-20 flex flex-col items-center py-8 space-y-10 font-bold bg-[#fff] sm:w-auto sm:self-center top-0 left-60 right-0 bottom-0 drop-shadow-md text-black">
-          <Link className="underline text-2xl" onClick={skrill} to={"/"}>
-            Home
+      <div ref={flexRef} className="hidden md:hidden">
+        <div className="animate__animated animate__slideInRight absolute z-20 flex flex-col items-start pt-5 ps-8 space-y-5 font-bold  sm:w-auto sm:self-center top-0 left-60 right-0 bottom-0 bg-[#222F3E] text-white">
+          <div className="flex space-x-2 items-center py-4 border-b-[0.5px] border-b-[#5c5656]">
+            <img src={Logo} alt="" />
+            <span className="font-[700] text-2xl">Connect Mi</span>
+          </div>
+          <Link
+            className="text-xl flex space-x-3 items-center"
+            onClick={skrill}
+            to={"/"}
+          >
+            <span>
+              <FaHome />
+            </span>
+            <span>Home</span>
           </Link>
           <Link
-            className="underline text-2xl"
+            className="text-xl flex space-x-3 items-center"
             onClick={skrill}
             to={"/products"}
           >
-            Products
+            <span>
+              <BsBoxSeam />
+            </span>
+            <span>Products</span>
           </Link>
           <Link
-            className="underline text-2xl"
+            className="text-xl flex space-x-3 items-center"
             onClick={skrill}
             to={"/services"}
           >
-            Services
+            <span>
+              <PiHandCoins />
+            </span>
+            <span>Services</span>
           </Link>
-          <Link className="underline text-2xl" onClick={skrill} to={"/search"}>
-            Search
+          <Link
+            className="text-xl flex space-x-3 items-center"
+            onClick={skrill}
+            to={"/wishlist"}
+          >
+            <span>
+              <MdFavoriteBorder />
+            </span>
+            <span>WishList</span>
           </Link>
-          <Link className="underline text-2xl" onClick={skrill} to={"/support"}>
-            Support
+          <Link
+            className="text-xl flex space-x-3 items-center"
+            onClick={skrill}
+            to={"/search"}
+          >
+            <span>
+              <TbClipboardList />
+            </span>
+            <span>My Items</span>
           </Link>
-          <Link className="underline text-3xl" onClick={skrill} to={"/"}>
-            Team
+          <Link
+            className="text-xl flex space-x-3 items-center pt-10"
+            onClick={skrill}
+            to={"/support"}
+          >
+            <span>
+              <BiSupport />
+            </span>
+            <span>Support</span>
           </Link>
         </div>
       </div>
