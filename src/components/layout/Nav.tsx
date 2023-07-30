@@ -111,7 +111,7 @@ const Nav = () => {
           </button>
         </div>
       </div>
-      <div ref={flexRef} className="hidden md:hidden">
+      <div ref={flexRef} className="hidden md:hidden bg-[#222F3E] text-white">
         <div className="animate__animated animate__slideInRight absolute z-20 flex flex-col items-center py-8 space-y-10 font-bold bg-[#fff] sm:w-auto sm:self-center top-0 left-60 right-0 bottom-0 drop-shadow-md text-black">
           <Link className="underline text-2xl" onClick={skrill} to={"/"}>
             Home
