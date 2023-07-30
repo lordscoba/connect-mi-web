@@ -6,6 +6,7 @@ import { GrFavorite } from "react-icons/gr";
 import { HiOutlineUser } from "react-icons/hi";
 import { PiSeal } from "react-icons/pi";
 import { TbTruckDelivery } from "react-icons/tb";
+import { Link } from "react-router-dom";
 import { Logo } from "../../images/logo";
 
 const Nav = () => {
@@ -112,28 +113,32 @@ const Nav = () => {
       </div>
       <div ref={flexRef} className="hidden md:hidden">
         <div className="animate__animated animate__slideInRight absolute z-20 flex flex-col items-center py-8 space-y-10 font-bold bg-[#fff] sm:w-auto sm:self-center top-0 left-60 right-0 bottom-0 drop-shadow-md text-black">
-          <a className="underline text-2xl" onClick={skrill} href="#hero">
+          <Link className="underline text-2xl" onClick={skrill} to={"/"}>
             Home
-          </a>
-          <a className="underline text-2xl" onClick={skrill} href="#why">
-            About
-          </a>
-          <a className="underline text-2xl" onClick={skrill} href="#features">
-            Features
-          </a>
-          <a className="underline text-2xl" onClick={skrill} href="#pricing">
-            Pricing
-          </a>
-          <a
+          </Link>
+          <Link
             className="underline text-2xl"
             onClick={skrill}
-            href="#testimonial"
+            to={"/products"}
           >
-            Testimonials
-          </a>
-          <a className="underline text-3xl" onClick={skrill} href="#team">
+            Products
+          </Link>
+          <Link
+            className="underline text-2xl"
+            onClick={skrill}
+            to={"/services"}
+          >
+            Services
+          </Link>
+          <Link className="underline text-2xl" onClick={skrill} to={"/search"}>
+            Search
+          </Link>
+          <Link className="underline text-2xl" onClick={skrill} to={"/support"}>
+            Support
+          </Link>
+          <Link className="underline text-3xl" onClick={skrill} to={"/"}>
             Team
-          </a>
+          </Link>
         </div>
       </div>
     </div>

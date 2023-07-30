@@ -218,7 +218,7 @@ const SearchListCard = ({ list }: any) => {
   );
 };
 
-const Star = () => {
+export const Star = () => {
   return (
     <div className="flex">
       <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar /> <AiFillStar />
