@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { BiSupport } from "react-icons/bi";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 const SupportBody = () => {
@@ -45,6 +46,17 @@ const SupportBody = () => {
             <div className="">How do I get in touch with the seller?</div>
           </div>
         )}
+      </div>
+      <div className="bg-white flex p-2 md:p-4 rounded-md space-y-3 w-full md:w-3/5 lg:1/2 justify-between">
+        <div className="flex items-center text-2xl">
+          <span>
+            <BiSupport />
+          </span>
+          <span>24/7 Online support </span>
+        </div>
+        <button className="bg-[#36424F] p-3 rounded-md text-white">
+          Chat Now
+        </button>
       </div>
     </div>
   );
